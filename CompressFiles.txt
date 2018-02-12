@@ -1,0 +1,66 @@
+tar (Tape r)
+==============
+.tar.gz or .tgz are same extension
+
+Compress a directory
+tar -cxvf direc.tar.gz /home/direc
+
+Decompress
+tar -zxvf direc.tar.gz
+
+
+-c Create an archive
+-x Extract archive instead of creating
+-z Compress archive witgh gzip
+-v Display progress in terminal
+-f Specify filename of archive
+
+
+Gunzip
+========
+Compression
+
+Gunzip example
+gzip mydocument.txt
+---> mydocument.txt.gz
+
+gunzip and keep original file
+gizp -k mydocument.txt
+---> mydoument.txt, mydoument.txt.gz
+
+Forces gunzip
+gzip -f mydocument.txt
+---> mydocument.txt.gz
+
+Compression level of guzip from 1 to 9
+gizp -1 mydocument.txt
+gzip -9 mydocument.txt
+
+Gunzip the files in folder recursively
+gzip -r mydirectory
+
+
+Run statistics on gunzip file
+gzip -l mydocument.txt.gz
+
+
+Decompress
+
+gunzip mydocument.txt.gz
+---> mydocument.txt
+
+
+gzip -d mydocument.txt.gz
+---> mydocument.txt
+
+
+Force gunzip
+gunzip -f mydocument.txt.gz
+---> mydocument.txt
+
+
+gunzip and keep original file
+gizp -k mydocument.txt.gz
+---> mydoument.txt, mydoument.txt.gz
+
+
